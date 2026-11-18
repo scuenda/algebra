@@ -3,106 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Álgebra Lineal – Apuntes del curso (ADE, UAM)</title>
   <meta name="description" content="Apuntes de Álgebra Lineal para el grado en Administración y Dirección de Empresas (ADE) de la Universidad Autónoma de Madrid: matrices, determinantes, sistemas de ecuaciones, espacios vectoriales, aplicaciones lineales, diagonalización y formas cuadráticas.">
   <meta name="msvalidate.01" content="373719B3B971301032BED3B569799015" />
-
-  <style>
-    :root {
-      --paper: #fbfcfd;
-      --ink: #1b2430;
-      --muted: #5a6573;
-      --rule: #d5dbe3;
-      --accent: #2b4c7e;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --paper: #161a20;
-        --ink: #e6e9ee;
-        --muted: #a2abb7;
-        --rule: #333b46;
-        --accent: #8fb0e0;
-      }
-    }
-    * { box-sizing: border-box; }
-    html { color-scheme: light dark; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-      font-size: 1.125rem;
-      line-height: 1.6;
-    }
-    main {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 3.5rem 1.5rem 4rem;
-    }
-
-    /* The title sits inside matrix brackets: the one decorative element of the page. */
-    header h1 {
-      display: inline-block;
-      margin: 0 0 0.75rem;
-      padding: 0.15em 0.55em;
-      font-size: clamp(2rem, 6vw, 2.8rem);
-      font-weight: 400;
-      letter-spacing: 0.01em;
-      line-height: 1.15;
-      border-left: 2px solid var(--ink);
-      border-right: 2px solid var(--ink);
-      position: relative;
-    }
-    header h1::before,
-    header h1::after {
-      content: "";
-      position: absolute;
-      top: 0; bottom: 0;
-      width: 0.35em;
-      border-top: 2px solid var(--ink);
-      border-bottom: 2px solid var(--ink);
-    }
-    header h1::before { left: 0; }
-    header h1::after { right: 0; }
-
-    .subtitle { margin: 0; color: var(--muted); }
-    .intro { margin: 2rem 0 2.5rem; }
-
-    ol.chapters {
-      list-style: none;
-      counter-reset: tema;
-      margin: 0;
-      padding: 0;
-      border-top: 1px solid var(--rule);
-    }
-    ol.chapters li {
-      counter-increment: tema;
-      display: grid;
-      grid-template-columns: 2.25rem 1fr;
-      gap: 0 0.75rem;
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    ol.chapters li::before {
-      content: counter(tema);
-      color: var(--muted);
-      font-size: 1.4rem;
-      line-height: 1.3;
-      text-align: right;
-    }
-    ol.chapters h2 {
-      margin: 0;
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: 1.35;
-    }
-    ol.chapters p { margin: 0.25rem 0 0; color: var(--muted); font-size: 1rem; }
-    ol.chapters a { color: var(--accent); text-underline-offset: 0.18em; }
-    ol.chapters a:hover { text-decoration-thickness: 2px; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-
-    footer { margin-top: 3rem; color: var(--muted); font-size: 0.95rem; }
-  </style>
+  <meta name="keywords" content="álgebra lineal, matrices, sistemas lineales, espacios vectoriales, aplicaciones lineales, diagonalización, formas cuadráticas">
+  <meta name="author" content="Sara Cuenda">
+  <link rel="stylesheet" type="text/css" href="./files/basic-profile.css" title="Sara Cuenda" media="all">
+  <title>Álgebra Lineal – Apuntes del curso (ADE, UAM)</title>
+  
 </head>
 <body>
   <main>
@@ -111,47 +18,48 @@
       <p class="subtitle">Apuntes del curso de Sara Cuenda. Grado en ADE, Universidad Autónoma de Madrid.</p>
     </header>
 
-    <p class="intro">
+    <p>
       Cada tema está disponible en PDF. Puedes descargarlos o consultarlos con el asistente de Copilot del curso.
     </p>
 
     <!-- EDIT: one <li> per PDF. Change the title, the description and the file name in href.
          The descriptions help Bing (and therefore the agent) understand what each file contains,
          so it is worth listing the main concepts of each chapter. -->
-    <ol class="chapters">
+    <h2>Apuntes</h2>
+    <ol>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema1.pdf">Matrices, traza y determinante</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema1.pdf">Matrices, traza y determinante</a></h2>
           <p>Vectores y matrices. Operaciones con vectores y matrices. Combinación lineal de vectores. Matrices traspuesta e inversa. Determinantes y sus propiedades. Dependencia lineal de vectores. Rango de un conjunto de vectores y de una matriz.</p>
         </div>
       </li>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema2.pdf">Sistemas de ecuaciones lineales</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema2.pdf">Sistemas de ecuaciones lineales</a></h2>
           <p>Definición. Soluciones de un sistema. Resolución por el método de Gauss y la regla de Cramer. Sistemas homogéneos.</p>
         </div>
       </li>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema3.pdf">Espacios vectoriales</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema3.pdf">Espacios vectoriales</a></h2>
           <p>Definición. Subespacios vectoriales: definición, ecuaciones, dimensión, base y coordenadas. Operaciones con subespacios.</p>
         </div>
       </li>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema4.pdf">Aplicaciones lineales</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema4.pdf">Aplicaciones lineales</a></h2>
           <p>Matriz asociada a una aplicación lineal. Cambio de base. Operaciones con aplicaciones lineales. Subespacios núcleo e imagen.</p>
         </div>
       </li>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema5.pdf">Diagonalización de matrices</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema5.pdf">Diagonalización de matrices</a></h2>
           <p>Valores y vectores propios. Polinomio característico. Matrices diagonalizables.</p>
         </div>
       </li>
       <li>
         <div>
-          <h2><a href="apuntes_algebra_ADE_tema6.pdf">Formas cuadráticas</a></h2>
+          <h3><a href="apuntes_algebra_ADE_tema6.pdf">Formas cuadráticas</a></h2>
           <p>Expresión matricial. Clasificación por el signo. Criterio de los menores principales. Criterio de los autovalores.</p>
         </div>
       </li>
@@ -159,7 +67,7 @@
 
     <h2>Otros materiales</h2>
 
-    <ul class="chapters">
+    <ul>
       <li>
         <div>
           <h3><a href="resumen_algebra.pdf">Resumen de Álgebra</a></h2>
